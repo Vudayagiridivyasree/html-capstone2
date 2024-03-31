@@ -1,0 +1,177 @@
+/*section 1*/
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color:#007F73;
+    font-size:30px;
+    font-family: "Sacramento", cursive;
+}
+
+.text-block {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*section 2*/
+
+.img-fluid{
+    border: 5px solid #007F73;
+    border-radius: 10px;
+}
+
+.works{
+    text-align: center;
+    color:#007F73;
+}
+
+/*section 3*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#hobbies{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container2{
+  padding:30px;
+  line-height: 30px;
+}
+
+.container2 p{
+  margin-bottom: 60px;
+}
+
+.container2 .left{
+  max-width: 300px;
+  float: left;
+  border: 5px solid #E1AFD1;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.container2 .right{
+  max-width: 300px;
+  float: left;
+  border: 5px solid #E1AFD1;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px)
+{
+  .container2 .left{
+    max-width: 300px;
+    float: none;
+    border: 5px solid #E1AFD1;
+    border-radius: 10px;
+    margin-right: 0;
+  }
+  
+  .container2 .right{
+    max-width: 300px;
+    float: none;
+    border: 5px solid #E1AFD1;
+    border-radius: 10px;
+    margin-right: 0;
+  }
+
+  .container2{
+    width: 100%;
+    padding:20px;
+    text-align: justify;
+  }
+}
+
+/* Contact Us*/
+
+#contact{
+  position: ralative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets1/images/contact2.jpg);
+  flex-direction: column;
+  background-size:cover;
+}
+
+#contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+
+#contact .content h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#contact .content p{
+  font-weight: 400;
+  color:#fff;
+}
+
+.container3{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container3 .contactinfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 .contactinfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container3 .contactinfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background:#FFF6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container3 .contactinfo .box .text{
+  display:flex;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #FFF6F6;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 567px)
+{
+  #contact{
+    padding: 50px;
+  }
+
+  .container3{
+    flex-direction: column;
+  }
+
+  .container3 .contactinfo{
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
